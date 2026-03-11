@@ -2,5 +2,5 @@ flask
 numpy
 opencv-python-headless
 requests
-tensorflow-cpu==2.15.0
+tensorflow-cpu==2.10.0
 werkzeug
