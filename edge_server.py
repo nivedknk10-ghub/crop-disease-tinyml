@@ -1,4 +1,4 @@
-import tensorflow as tf
+import tflite_runtime.interpreter as tflite
 import numpy as np
 import cv2
 import json
@@ -19,7 +19,7 @@ with open("model/class_names.json") as f:
 class_names = {v: k for k, v in class_indices.items()}
 
 # Load TinyML model
-interpreter = tf.lite.Interpreter(model_path="model/crop_disease_model.tflite")
+interpreter = tflite.Interpreter(model_path="model/crop_disease_model.tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
