@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Crop Disease Detector</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg,#2ecc71,#27ae60);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.container{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    width:350px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#2c3e50;
+}
+
+input[type="text"],
+input[type="file"]{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#27ae60;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e8449;
+}
+
+.footer{
+    margin-top:15px;
+    font-size:12px;
+    color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🌿 Crop Disease Detection</h2>
+
+<form action="/predict" method="post" enctype="multipart/form-data">
+
+<input type="text" name="phone" placeholder="Enter Phone Number" required>
+
+<input type="file" name="image" required>
+
+<button type="submit">Detect Disease</button>
+
+</form>
+
+<div class="footer">
+AI Powered TinyML Crop Health System
+</div>
+
+</div>
+
+</body>
+</html>
