@@ -115,7 +115,7 @@ Model characteristics:
 
 🚀 How to Run the Project
 1️⃣ Clone Repository
-git clone https://github.com/YOUR_USERNAME/crop-disease-ai.git
+git clone https://github.com/nivedknk10-ghub/crop-disease-tinyml.git
 cd crop-disease-ai
 2️⃣ Install Dependencies
 pip install -r requirements.txt
